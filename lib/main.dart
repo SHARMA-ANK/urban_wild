@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Urban Wild',
 
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
