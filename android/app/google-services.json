@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1099157267160",
+    "project_id": "urban-wild",
+    "storage_bucket": "urban-wild.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099157267160:android:c99531f9e0dd1593762dad",
+        "android_client_info": {
+          "package_name": "com.example.urban_wild"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3F-KM2MCrZQcoAewyLo1AenXewgwhSZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
