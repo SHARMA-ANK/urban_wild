@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:urban_wild/Screens/add_event_screen.dart';
 import 'package:urban_wild/Screens/event_screen.dart';
 import 'package:urban_wild/Screens/gardens_screen.dart';
@@ -69,7 +70,7 @@ class _BaseScreenState extends State<BaseScreen> {
       show=screens[_currentIndex];
     }
     return Scaffold(
-        backgroundColor: const Color.fromRGBO(176, 232, 190, 1.0),
+        //backgroundColor: const Color.fromRGBO(176, 232, 190, 1.0),
         body:show ,
         bottomNavigationBar: BottomNavigationBar(
           type : BottomNavigationBarType.fixed,
@@ -80,25 +81,25 @@ class _BaseScreenState extends State<BaseScreen> {
               _currentIndex = index;
             });
           },
-          items: const [
+          items:  [
           BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label:"Home",
+          icon: const Icon(Icons.home,size: 30),
+          label:"Home".toUpperCase(),
 
           ),
           BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_month),
-          label: "Events"
+          icon: const Icon(Icons.calendar_month,size: 30),
+          label: "Events".toUpperCase()
           ),
           BottomNavigationBarItem(
-          icon: Icon(Icons.add_box_rounded),
-          label: "Add Event",
+          icon: const Icon(Icons.add_box_rounded,size: 30),
+          label: "Add Event".toUpperCase(),
             backgroundColor: Colors.black
           ),
 
             BottomNavigationBarItem(
-                icon: Icon(Icons.emoji_nature_outlined),
-                label: "Gardens",
+                icon: const FaIcon(FontAwesomeIcons.tree,size: 30,),
+                label: "Gardens".toUpperCase(),
                 backgroundColor: Colors.black
             ),
           ]

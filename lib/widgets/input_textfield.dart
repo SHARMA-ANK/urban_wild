@@ -18,7 +18,11 @@ class _InputTextWidgetState extends State<InputTextWidget> {
 
         controller: widget.textEditingController,
         decoration: InputDecoration(
-          labelText: widget.text,
+          labelText: widget.text.toUpperCase(),
+          labelStyle: const TextStyle(
+            fontFamily: "Lohit Tamil",
+            fontWeight: FontWeight.bold
+          ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(30.0),
             borderSide: const BorderSide(

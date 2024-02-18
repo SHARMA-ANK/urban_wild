@@ -11,10 +11,14 @@ class EventDescription extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          event.name,
-          style: const TextStyle(
-            fontFamily: 'More Sugar',
+          event.name.toUpperCase(),
+          style: TextStyle(
+              fontFamily: "Lohit Tamil",
+              fontWeight: FontWeight.values[8],
+              fontSize: 20,
+              color: const Color.fromARGB(255, 67, 104, 80)
           ),
+
         ),
         centerTitle: true,
       ),
@@ -47,23 +51,27 @@ class EventDescription extends StatelessWidget {
                     Card(
                       child: Padding(
                         padding: const EdgeInsets.all(4.0),
-                        child: Row(
-                          children: [
-                            const Icon(
-                              Icons.calendar_month,
-                              size: 30,
-                            ),
-                            const SizedBox(width: 7,),
-                            Text(
-                              event.date,
-
-                              style: const TextStyle(
-                                fontSize: 20,
-
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              const Icon(
+                                Icons.calendar_month,
+                                size: 30,
                               ),
-                            ),
+                              const SizedBox(width: 7,),
+                              Text(
+                                event.date,
 
-                          ],
+                                style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Lohit Tamil"
+                                ),
+                              ),
+
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -71,8 +79,15 @@ class EventDescription extends StatelessWidget {
                     Card(
                       child: Padding(
                         padding: const EdgeInsets.all(4),
-                        child: Row(
-                          children: [const Icon(Icons.access_time_filled,size: 30,),const SizedBox(width: 7,), Text(event.time,style:const TextStyle(fontSize: 20),)],
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 16),
+                          child: Row(
+                            children: [const Icon(Icons.access_time_filled,size: 30,),const SizedBox(width: 7,), Text(event.time,style:const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Lohit Tamil"
+                            ),)],
+                          ),
                         ),
                       ),
                     ),
@@ -85,21 +100,26 @@ class EventDescription extends StatelessWidget {
                 child: Card(
                   child: Padding(
                     padding: const EdgeInsets.all(4.0),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.location_on,
-                          size: 30,
-                        ),
-                        const SizedBox(width: 2,),
-                        Text(
-                          event.location,
-                          style: const TextStyle(
-                            fontSize: 20
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          const Icon(
+                            Icons.location_on,
+                            size: 30,
                           ),
-                        ),
+                          const SizedBox(width: 2,),
+                          Text(
+                            event.location.toUpperCase(),
+                            style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Lohit Tamil"
+                            ),
+                          ),
 
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -109,8 +129,10 @@ class EventDescription extends StatelessWidget {
                 child: Text(
                   "Description",
                   style: TextStyle(
-                      fontFamily: 'More Sugar',
-                      fontSize: 20
+                      fontFamily: "Lohit Tamil",
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Color.fromARGB(255, 67, 104, 80)
                   ),
                 ),
               ),
@@ -122,20 +144,24 @@ class EventDescription extends StatelessWidget {
                     child: Text(
                       event.description,
                       style: const TextStyle(
-                        fontSize: 20,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Lohit Tamil"
                       ),
                     ),
                   ),
                 ),
               ),
 
-              const Padding(
-                padding: EdgeInsets.only(right: 15.0,left: 15,top: 15),
+              Padding(
+                padding: const EdgeInsets.only(right: 15.0,left: 15,top: 15),
                 child: Text(
-                  "Additional Information",
-                  style: TextStyle(
-                      fontFamily: 'More Sugar',
-                      fontSize: 20
+                  "Additional Information".toUpperCase(),
+                  style: const TextStyle(
+                      fontFamily: "Lohit Tamil",
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Color.fromARGB(255, 67, 104, 80)
                   ),
                 ),
               ),
@@ -147,7 +173,9 @@ class EventDescription extends StatelessWidget {
                     child: Text(
                       event.additionalInfo,
                       style: const TextStyle(
-                        fontSize: 20,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Lohit Tamil"
                       ),
                     ),
                   ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:urban_wild/data/garden_data.dart';
 import 'package:urban_wild/models/event.dart';
 import 'package:urban_wild/widgets/event_card.dart';
 import 'package:urban_wild/widgets/location_container.dart';
-import 'package:urban_wild/widgets/sugar_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../models/garden.dart';
@@ -81,8 +81,9 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 5),
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                const SizedBox(height: 10,),
                 const Row(
                   children: [
                    LocationContainer(),
@@ -99,17 +100,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
-                const SugarText(text: "Discover",fontSize: 45,)
+                Text( "Discover".toUpperCase(),
+                  style: GoogleFonts.londrinaSketch(
+                    fontSize: 80,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
                 ,
                 SizedBox(
-                  width: size.width / (1.5),
+                  width: size.width / (1.3),
                   height: 50,
                   child: TextField(
                     decoration: InputDecoration(
                       suffixIcon: const Icon(Icons.search),
                       hintText: "Search Destination",
+                      hintStyle: const TextStyle(
+                        fontFamily: "Lohit Tamil",
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+
+                      ),
+
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20)),
                       fillColor: Colors.white,
@@ -120,22 +133,24 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
             
                 //Image Containers
-                const SizedBox(height: 30,),
+                const SizedBox(height: 25,),
             
-                const Text(
-                  "Upcoming Events",
-                  style: TextStyle(
-                      fontFamily: 'More Sugar',
-                      fontSize: 20
+                 Text(
+                  "Upcoming Events".toUpperCase(),
+                  style: const TextStyle(
+                      fontFamily: 'Britannic',
+                      fontSize: 20,
+                    fontWeight: FontWeight.bold
                   ),),
-                const SizedBox(height: 10,),
+                //const SizedBox(height: 10,),
                 EventCard(event: widget.event),
                 const SizedBox(height: 10,),
-                const Text(
-                  "Must Visit ",
-                  style: TextStyle(
-                      fontFamily: 'More Sugar',
-                      fontSize: 20
+                Text(
+                  "Must Visit".toUpperCase(),
+                  style: const TextStyle(
+                      fontFamily: 'Britannic',
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold
                   ),),
                 Padding(
                   padding: const EdgeInsets.only(top: 16),

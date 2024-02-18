@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
 
         },
         theme: ThemeData(
-          scaffoldBackgroundColor: const Color.fromRGBO(176, 232, 190, 1.0),
+          scaffoldBackgroundColor: const Color.fromRGBO(173, 188, 159, 1.0),
         ),
       home: StreamBuilder(
         stream: AuthMethods().authChanges,

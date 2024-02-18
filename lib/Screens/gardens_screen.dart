@@ -17,29 +17,39 @@ class GardenScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gardens',style: TextStyle(fontFamily: "More Sugar"),),
+        centerTitle: true,
+        title: Text('Gardens'.toUpperCase(),style: TextStyle(
+            fontFamily: "Lohit Tamil",
+            fontWeight: FontWeight.values[8],
+            fontSize: 35,
+            color: const Color.fromARGB(255, 67, 104, 80)
+        ),),
+        backgroundColor:  const Color.fromRGBO(173, 188, 159, 1.0),
       ),
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-        ),
-        itemCount: gardens.length,
-        itemBuilder: (context, index) {
-          return GestureDetector(
-            onTap: () {
-              _showLocationInfo(context, gardens[index]);
-            },
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Image.network(
-                gardens[index].imageUrl,
-                fit: BoxFit.cover,
+      body: Padding(
+        padding: const EdgeInsets.only(left: 10.0,right: 10,top: 10),
+        child: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 20,
+            mainAxisSpacing: 20,
+          ),
+          itemCount: gardens.length,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () {
+                _showLocationInfo(context, gardens[index]);
+              },
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: Image.network(
+                  gardens[index].imageUrl,
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }

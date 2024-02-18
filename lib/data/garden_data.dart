@@ -36,4 +36,46 @@ List<Garden> gardens=[
     location : "C-11, Madhav Nagar, Dhanori, Pune, Maharashtra 411015",
     googlelink : "https://maps.app.goo.gl/cdBssJ1HtTuHiV4FA",
   ),
+  Garden(
+    name: "Butterfly Park",
+    imageUrl: "https://media2.thrillophilia.com/images/photos/000/149/003/original/1553078537_5375f062e4b093febb025290_600x315.jpg?w=753&h=450&dpr=1.0",
+    description: "One of the most popular gardens in Pune, the Bund is a hotspot among locals. /n Kids and senior citizens visit the garden most frequently during mornings as it is a great place to enjoy some jogging and exercises. The garden is well-maintained with lush greenery and a landscaped layout. The Fitzgerald bridge nearby is another tourist hotspot. Bund Garden is located near some of the most snacks bar and restaurants of Pune, so do check them out if you get hunger pangs after your bout of exercises. Bund garden is the perfect place for workout fanatics and those who love to jog.",
+    location : " Aranyeshwar Marg, Aranyeshwar Nagar, Parvati Paytha, Pune, Maharashtra.",
+    googlelink : "https://maps.app.goo.gl/SKQW4Par7siKamBu5",
+  ),
+  Garden(
+    name: "Gram sanskruti udyan",
+    imageUrl: "https://media2.thrillophilia.com/images/photos/000/149/002/original/1553078499_maxresdefault.jpg?w=753&h=450&dpr=1.0",
+    description: "One of the most popular gardens in Pune, the Bund is a hotspot among locals. /n Kids and senior citizens visit the garden most frequently during mornings as it is a great place to enjoy some jogging and exercises. The garden is well-maintained with lush greenery and a landscaped layout. The Fitzgerald bridge nearby is another tourist hotspot. Bund Garden is located near some of the most snacks bar and restaurants of Pune, so do check them out if you get hunger pangs after your bout of exercises. Bund garden is the perfect place for workout fanatics and those who love to jog.",
+    location : "Someshwarwadi, Pashan, Pune, Maharashtra..",
+    googlelink : "https://maps.app.goo.gl/SKQW4Par7siKamBu5",
+  ),
+  Garden(
+    name: "Rajiv Gandhi National Park",
+    imageUrl: "https://media2.thrillophilia.com/images/photos/000/149/001/original/1553501903_925047467s.jpg?w=753&h=450&dpr=1.0",
+    description: "One of the most popular gardens in Pune, the Bund is a hotspot among locals. /n Kids and senior citizens visit the garden most frequently during mornings as it is a great place to enjoy some jogging and exercises. The garden is well-maintained with lush greenery and a landscaped layout. The Fitzgerald bridge nearby is another tourist hotspot. Bund Garden is located near some of the most snacks bar and restaurants of Pune, so do check them out if you get hunger pangs after your bout of exercises. Bund garden is the perfect place for workout fanatics and those who love to jog.",
+    location : "Someshwarwadi, Pashan, Pune, Maharashtra..",
+    googlelink : "https://maps.app.goo.gl/SKQW4Par7siKamBu5",
+  ),
+  Garden(
+    name: "Chittaranjan Vatika garden",
+    imageUrl: "https://media2.thrillophilia.com/images/photos/000/148/999/original/1553078418_vzkgcce59rghfx8azrqg.jpg?w=753&h=450&dpr=1.0",
+    description: "One of the most popular gardens in Pune, the Bund is a hotspot among locals. /n Kids and senior citizens visit the garden most frequently during mornings as it is a great place to enjoy some jogging and exercises. The garden is well-maintained with lush greenery and a landscaped layout. The Fitzgerald bridge nearby is another tourist hotspot. Bund Garden is located near some of the most snacks bar and restaurants of Pune, so do check them out if you get hunger pangs after your bout of exercises. Bund garden is the perfect place for workout fanatics and those who love to jog.",
+    location : "Someshwarwadi, Pashan, Pune, Maharashtra..",
+    googlelink : "https://maps.app.goo.gl/SKQW4Par7siKamBu5",
+  ),
+  Garden(
+    name: "Sambhaji Park",
+    imageUrl: "https://media2.thrillophilia.com/images/photos/000/148/998/original/1553078381_Sambhaji_Park.JPG?w=753&h=450&dpr=1.0",
+    description: "One of the most popular gardens in Pune, the Bund is a hotspot among locals. /n Kids and senior citizens visit the garden most frequently during mornings as it is a great place to enjoy some jogging and exercises. The garden is well-maintained with lush greenery and a landscaped layout. The Fitzgerald bridge nearby is another tourist hotspot. Bund Garden is located near some of the most snacks bar and restaurants of Pune, so do check them out if you get hunger pangs after your bout of exercises. Bund garden is the perfect place for workout fanatics and those who love to jog.",
+    location : "Someshwarwadi, Pashan, Pune, Maharashtra..",
+    googlelink : "https://maps.app.goo.gl/SKQW4Par7siKamBu5",
+  ),
+  Garden(
+    name: "Baner Pashan Biodiversity Park",
+    imageUrl: "https://media2.thrillophilia.com/images/photos/000/148/989/original/1553077417_Baner_Biodiversity_Park.JPG?w=753&h=450&dpr=1.0",
+    description: "One of the most popular gardens in Pune, the Bund is a hotspot among locals. /n Kids and senior citizens visit the garden most frequently during mornings as it is a great place to enjoy some jogging and exercises. The garden is well-maintained with lush greenery and a landscaped layout. The Fitzgerald bridge nearby is another tourist hotspot. Bund Garden is located near some of the most snacks bar and restaurants of Pune, so do check them out if you get hunger pangs after your bout of exercises. Bund garden is the perfect place for workout fanatics and those who love to jog.",
+    location : "Someshwarwadi, Pashan, Pune, Maharashtra..",
+    googlelink : "https://maps.app.goo.gl/SKQW4Par7siKamBu5",
+  )
 ];

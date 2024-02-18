@@ -96,6 +96,13 @@ flutter:
      - family: Quiapo
        fonts:
         - asset: assets/fonts/quiapo/Quiapo_Free.ttf
+     - family: Lohit Tamil
+       fonts:
+         - asset: assets/fonts/lohit-tamil.ttf
+     - family: Britannic
+       fonts:
+         - asset: assets/fonts/britanic.ttf
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

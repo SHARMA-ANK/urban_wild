@@ -149,14 +149,17 @@ class _AddEventScreenState extends State<AddEventScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(176, 232, 190, 1.0),
+     // backgroundColor: const Color.fromRGBO(176, 232, 190, 1.0),
       appBar: AppBar(
-        title: const Text(
-          'Add Event',
+        title:  Text(
+          'Add Event'.toUpperCase(),
           style: TextStyle(
-            fontFamily: 'More Sugar'
+            fontFamily: "Lohit Tamil",
+            fontWeight: FontWeight.values[8],
+            fontSize: 35,
+            color: const Color.fromARGB(255, 67, 104, 80)
           ),
-        ),backgroundColor: const Color.fromRGBO(176, 232, 190, 1.0),
+        ),backgroundColor:  const Color.fromRGBO(173, 188, 159, 1.0),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -174,52 +177,70 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 children: [
 
                   Container(
-                    width: 150,
-                    height: 50,
+
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(30),
                       color: Colors.white,
                     ),
-                    child: InkWell(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Icon(Icons.calendar_month,size: 30,),
-                          const SizedBox(width: 4,),
-                          Text(eventDate == null
-                              ? 'Please select a date'
-                              : '${eventDate.year}-${eventDate.month}-${eventDate.day}',
-                            style: const TextStyle(
-                              fontSize:15
-                            ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: InkWell(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.calendar_month,size: 30,),
+                              const SizedBox(width: 8,),
+                              Text(eventDate == null
+                                  ? 'Please select a date'
+                                  : '${eventDate.year}-${eventDate.month}-${eventDate.day}',
+                                style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Lohit Tamil"
+                                ),
 
+                              ),
+                            ],
                           ),
-                        ],
+                        ),
+                        onTap: () => _selectDate(context),
                       ),
-                      onTap: () => _selectDate(context),
                     ),
                   ),
+                  const Spacer(),
                   Container(
 
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(30),
                       color: Colors.white,
                     ),
-                    width: 150,
-                    height: 50,
-                    child: InkWell(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Icon(Icons.access_time_outlined),
-                          const SizedBox(width: 4,),
-                          Text(eventTime == null
-                              ? 'Please select a time'
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: InkWell(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 20),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.calendar_month,size: 30,),
+                              const SizedBox(width: 8,),
+                              Text(eventTime == null
+                                  ? 'Please select a time'
 
-                              : '${eventTime.hour}:${eventTime.minute}'),
-                        ],
+                                  : '${eventTime.hour}:${eventTime.minute}',
+                                style: const TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Lohit Tamil"
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        onTap: () => _selectTime(context),
                       ),
-                      onTap: () => _selectTime(context),
                     ),
                   ),
                 ],
@@ -244,6 +265,10 @@ class _AddEventScreenState extends State<AddEventScreen> {
                       controller: fileAttachmentController,
                       decoration: InputDecoration(
                         labelText: 'File Attachment (JPG only)',
+                        labelStyle: const TextStyle(
+                            fontFamily: "Lohit Tamil",
+                            fontWeight: FontWeight.bold
+                        ),
                         errorText:
                         isFileValid ? null : 'Please upload JPG file only',
                       ),
@@ -271,7 +296,10 @@ class _AddEventScreenState extends State<AddEventScreen> {
                    _submitForm();
                   }
                 },
-                child: const Text('Submit'),
+                child:  Text('Submit'.toUpperCase(),style: const TextStyle(
+                    fontFamily: "Lohit Tamil",
+                    fontWeight: FontWeight.bold
+                ),),
               ),
             ],
           ),
