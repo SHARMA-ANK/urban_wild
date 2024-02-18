@@ -130,8 +130,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),),
                 const SizedBox(height: 10,),
                 EventCard(event: widget.event),
+                const SizedBox(height: 10,),
                 const Text(
-                  "Upcoming Events",
+                  "Must Visit ",
                   style: TextStyle(
                       fontFamily: 'More Sugar',
                       fontSize: 20
